@@ -1,8 +1,6 @@
 class SpreeReviewsHooks < Spree::ThemeSupport::HookListener
   insert_after :product_properties, 'shared/reviews'
-  insert_after :inside_head do
-    %( <%= stylesheet_link_tag('reviews.css') %> )
-  end
+
   
   insert_after :footer_right do
     %(
